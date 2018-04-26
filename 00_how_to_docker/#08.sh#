@@ -1,0 +1,7 @@
+#!bin/bash
+
+
+str = qqqqqqqqqqqqqqqqqqq\naaaaaaaaaaaaaaaaaaaaa\naaaaaaaaaaaaaa
+      .                  .
+str= ft_strchr(str, '\n')
+str = 
