@@ -9,11 +9,8 @@
 #pip install Flask
 #docker-machine scp hello.py Char:/home
 #python hello.py
-docker container rm --force Abathur
-docker run -dt --name Abathur --publish 3000:3000 --volume $HOME/root:/root:ro python:2-slim bash
-docker container exec Abathur python hello.py
+docker run -dt --name Abathur --publish 3000:3000 --volume $HOME/root:/root:ro python:2-slim bash #python hello.py
 #apt-get update && apt-get install -y emacs
 #emacs hello.py
-
-#python hello.py
+python hello.py
 #rm get-pip.py
