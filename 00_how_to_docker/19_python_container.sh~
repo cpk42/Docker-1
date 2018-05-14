@@ -1,9 +1,0 @@
-#!/bin/bash
-
-docker container rm --force Abathur
-docker run -dt --name Abathur --publish 3000:3000 python:2-slim bash
-docker cp ./hello.py Abathur:/hello.py
-docker container exec Abathur apt-get update -y
-docker container exec Abathur apt-get install -y pip
-docker container exec Abathur pip install flask
-docker container exec Abathur python hello.py
